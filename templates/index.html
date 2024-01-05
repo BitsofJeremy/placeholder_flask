@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<!--
+	Eventually by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>PLACEHOLDER.2024</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" type="text/css"  href="{{ url_for('static', filename='assets/css/main.css') }}">
+		<script src="https://kit.fontawesome.com/c13d8c9de3.js" crossorigin="anonymous"></script>
+
+    <!-- fancy title font-->
+    <!-- B612 Mono -->
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=B612+Mono">
+
+    <!--    Add background style here for Jinja2 to work-->
+    <style>
+        .b612-mono {
+            font-family: 'B612 Mono', serif;
+        }
+
+        /* CSS styles for the video background */
+        #video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        #video-background {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+
+	</head>
+	<body class="is-preload">
+	<div id="video-container">
+		<video id="video-background" autoplay muted loop>
+		<!--  Video by Tima Miroshnichenko from Pexels: https://www.pexels.com/video/close-up-view-of-a-motherboard-6754818/ -->
+			  <source src="{{ video_url }}" type="video/mp4">
+		</video>
+	</div>
+
+		<!-- Header -->
+			<header id="header">
+				<h1 class="b612-mono">PLACEHOLDER.2024</h1>
+				<p class="b612-mono">A simple template</p>
+			</header>
+
+		<!-- Signup Form -->
+			<form id="signup-form" method="post" action="contact"  class="b612-mono">
+				<input  class="b612-mono" type="text" name="name" id="name" placeholder="Name" />
+				<input  class="b612-mono" type="email" name="email" id="email" placeholder="Email Address" />
+				<input  class="b612-mono" type="submit" value="Sign Up" />
+			</form>
+		<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="#" class="icon brands fa-x-twitter"><span class="label">Twitter</span></a></li>
+
+				</ul>
+				<ul class="copyright b612-mono">
+					<li>&copy; PLACEHOLDER.2024 </li>
+
+				</ul>
+			</footer>
+
+	</body>
+</html>
